@@ -5,18 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>05 - Form</title>
-    <!-- <link rel="stylesheet" href="../styles.css" />
-    <link rel="stylesheet" href="../hw2/05-form.css" /> -->
+    <meta name="description"
+      content="Example form with text, email, password, radio, and date inputs" />
+    <meta name="keywords"
+      content="cs410, hw1, exercise, 05, form" />
+    <meta http-equiv="author"
+      content="Jacob Bentley" />
   </head>
   <body>
     <main>
       <!-- Begin Exercise 5 -->
-      <form action="">
-        <h1>Registration Form</h1>
+      <form id="registration" action="">
+        <!-- Form title -->
+        <h1 id="regtitle">Registration Form</h1>
         <!-- Input username -->
         <label for="username">Username:</label>
         <input
           id="username"
+          class="regtext"
           type="text"
           name="username"
           required="required"
@@ -26,6 +32,7 @@
         <label for="email">Email:</label>
         <input
           id="email"
+          class="regtext"
           type="email"
           name="email"
           required="required"
@@ -35,17 +42,19 @@
         <label for="password">Password:</label>
         <input
           id="password"
+          class="regtext"
           type="password"
           name="password"
           required="required"
         />
         <br /><br />
         <!-- Input newsletter option -->
-        <fieldset>
+        <fieldset id="subnewsletter">
           <legend>Would you like to sign up for the newsletter?</legend>
           <!-- Sign up -->
           <input
             id="signup"
+            class="suboption"
             type="radio"
             name="newsletter"
             value="true"
@@ -55,6 +64,7 @@
           <!-- Do not sign up -->
           <input
             id="nosignup"
+            class="suboption"
             type="radio"
             name="newsletter"
             value="false"
@@ -64,9 +74,9 @@
         </fieldset>
         <br />
         <!-- Input date -->
-        <label for="date">Date:</label>
+        <label for="regdate">Date:</label>
         <input
-          id="date"
+          id="regdate"
           type="date"
           name="date"
           required="required"
@@ -74,11 +84,13 @@
         <br /><br />
         <!-- Submit button -->
         <input
+          id="submitbutton"
           type="submit"
           value="Submit"
         />
         <!-- Reset button -->
         <input
+          id="resetbutton"
           type="reset"
           value="Reset"
         />
