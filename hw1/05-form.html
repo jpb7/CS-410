@@ -10,10 +10,80 @@
   </head>
   <body>
     <main>
+      <!-- Begin Exercise 5 -->
       <form action="">
-        <h1>Contact Form</h1>
-        <!-- Add your code here -->
+        <h1>Registration Form</h1>
+        <!-- Input username -->
+        <label for="username">Username:</label>
+        <input
+          id="username"
+          type="text"
+          name="username"
+          required="required"
+        />
+        <br /><br />
+        <!-- Input email -->
+        <label for="email">Email:</label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          required="required"
+        />
+        <br /><br />
+        <!-- Input password -->
+        <label for="password">Password:</label>
+        <input
+          id="password"
+          type="password"
+          name="password"
+          required="required"
+        />
+        <br /><br />
+        <!-- Input newsletter option -->
+        <fieldset>
+          <legend>Would you like to sign up for the newsletter?</legend>
+          <!-- Sign up -->
+          <input
+            id="signup"
+            type="radio"
+            name="newsletter"
+            value="true"
+            required="required"
+          />
+          <label for="signup">Yes, sign me up</label>
+          <!-- Do not sign up -->
+          <input
+            id="nosignup"
+            type="radio"
+            name="newsletter"
+            value="false"
+            required="required"
+          />
+          <label for="nosignup">No, thank you</label>
+        </fieldset>
+        <br />
+        <!-- Input date -->
+        <label for="date">Date:</label>
+        <input
+          id="date"
+          type="date"
+          name="date"
+          required="required"
+        />
+        <br /><br />
+        <!-- Submit button -->
+        <input
+          type="submit"
+          value="Submit"
+        />
+        <!-- Reset button -->
+        <input
+          type="reset"
+          value="Reset"
+        />
       </form>
+      <!-- End Exercise 5 -->
     </main>
   </body>
 </html>
