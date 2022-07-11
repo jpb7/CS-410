@@ -21,18 +21,7 @@ body {
   text-decoration: none;
 }
 
-.navlink:hover {
-  color: var(--black);
-  background-color: var(--orange);
-}
-
-.navlink:active {
-  color: var(--black);
-  background-color: var(--orange);
-}
-
-.navlink:focus {
-  border: none;
+.navlink:hover, .navlink:active, .navlink:focus {
   color: var(--black);
   background-color: var(--orange);
 }
