@@ -11,48 +11,50 @@
       content="cs410, hw1, exercise, 04, table" />
     <meta http-equiv="author"
       content="Jacob Bentley" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../hw2/04-table.css" />
   </head>
   <body>
     <main>
       <!-- Begin Exercise 4 -->
-      <table id="tvlistings" border="1">
-        <thead><h1 id="tvhead">TV Listings</h1></thead>
-        <tbody id="tvbody">
+      <table id="8to10" class="tv-listings">
+        <thead><h1>TV Listings</h1></thead>
+        <tbody>
           <!-- First row -->
-          <tr class="tvrow">
-            <th class="tvsubhead">Time / Channels</th>
-            <th class="tvsubhead" scope="col">8:00 PM</th>
-            <th class="tvsubhead" scope="col">9:00 PM</th>
-            <th class="tvsubhead" scope="col">10:00 PM</th>
+          <tr>
+            <th class="table-heading">Time / Channels</th>
+            <th class="table-heading" scope="col">8:00 PM</th>
+            <th class="table-heading" scope="col">9:00 PM</th>
+            <th class="table-heading" scope="col">10:00 PM</th>
           </tr>
           <!-- Second row -->
-          <tr class="tvrow">
-            <th class="tvsubhead" scope="row">ABC</th>
+          <tr>
+            <th class="channel" scope="row">ABC</th>
             <td>The Goldbergs</td>
             <td>Home Economics</td>
             <td>black-ish</td>
           </tr>
           <!-- Third row -->
-          <tr class="tvrow">
-            <th class="tvsubhead" scope="row">CBS</th>
+          <tr>
+            <th class="channel" scope="row">CBS</th>
             <td>Young Sheldon</td>
             <td>United States of Al</td>
             <td>Mom</td>
           </tr>
           <!-- Fourth row -->
-          <tr class="tvrow">
-            <th class="tvsubhead" scope="row">NBC</th>
+          <tr>
+            <th class="channel" scope="row">NBC</th>
             <td colspan="3">Stanley Cup Playoffs</td>
           </tr>
           <!-- Fifth row -->
-          <tr class="tvrow">
-            <th class="tvsubhead" scope="row">Fox</th>
+          <tr>
+            <th class="channel" scope="row">Fox</th>
             <td>Beat Shazam</td>
             <td colspan="2">Local Programming</td>
           </tr>
         </tbody>
         <!-- Empty footer -->
-        <tfoot id="tvfoot"></tfoot>
+        <tfoot></tfoot>
       </table>
       <!-- End Exercise 4 -->
     </main>
