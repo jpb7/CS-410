@@ -5,12 +5,34 @@ body {
   margin: 0;
 }
 
-.nav-list {
+.navlist {
+  list-style: none;
 }
 
-.list-item {
+.navlink {
+  border: none;
+  color: var(--white);
   background-color: var(--green);
+  float: left;
+  padding: 30px;
 }
 
-.nav-link {
+.navlink:link {
+  text-decoration: none;
+}
+
+.navlink:hover {
+  color: var(--black);
+  background-color: var(--orange);
+}
+
+.navlink:active {
+  color: var(--black);
+  background-color: var(--orange);
+}
+
+.navlink:focus {
+  border: none;
+  color: var(--black);
+  background-color: var(--orange);
 }
