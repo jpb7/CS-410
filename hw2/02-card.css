@@ -6,12 +6,12 @@ If you would prefer, you can delete them and use your own classes and style decl
   border-style: solid;
   border-width: 1px;
   border-radius: 5px;
-  border-color: navy;
+  border-color: var(--navy);
   font-size: 16px;
 }
 
 .cardtitle {
-  color: navy;
+  color: var(--navy);
   margin: 30px auto 20px auto;
   text-align: center;
   font-size: 22px;
@@ -32,11 +32,11 @@ If you would prefer, you can delete them and use your own classes and style decl
   height: 30px;
   border-width: 1px;
   margin: auto 15px 30px 15px;
-  color: white;
-  background-color: navy;
+  color: var(--white);
+  background-color: var(--navy);
 }
 
 .cardbutton:hover {
-  color: black;
-  background-color: orange;
+  color: var(--black);
+  background-color: var(--orange);
 }
