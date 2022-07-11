@@ -2,7 +2,6 @@
 If you would prefer, you can delete them and use your own classes and style definitions. */
 
 body {
-  font-family: Arial;
   text-align: center;
   font-size: 16px;
 }
@@ -20,6 +19,6 @@ p#bio {
 }
 
 p#bio:first-line {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
 }
