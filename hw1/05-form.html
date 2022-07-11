@@ -21,7 +21,7 @@
         <!-- Form title -->
         <h1>Registration Form</h1>
         <!-- Input username -->
-        <div class="text-field">
+        <div class="text-object">
           <label for="username" class="form-text">Username:</label>
           <input
             id="username"
@@ -32,7 +32,7 @@
           />
         </div>
         <!-- Input email -->
-        <div class="text-field">
+        <div class="text-object">
           <label for="email" class="form-text">Email:</label>
           <input
             id="email"
@@ -43,7 +43,7 @@
           />
         </div>
         <!-- Input password -->
-        <div class="text-field">
+        <div class="text-object">
           <label for="password" class="form-text">Password:</label>
           <input
             id="password"
@@ -69,23 +69,22 @@
               value="true"
               required="required"
             />
-            <label for="signup" class="radio-text">Yes, sign me up</label>
+            <label for="signup">Yes, sign me up</label>
           </div>
           <!-- Do not sign up -->
           <div class="radio-field">
             <input
               id="nosignup"
-              class="suboption"
               type="radio"
               name="newsletter"
               value="false"
               required="required"
             />
-            <label for="nosignup" class="radio-text">No, thank you</label>
+            <label for="nosignup">No, thank you</label>
           </div>
         </fieldset>
         <!-- Input date -->
-        <div class="text-field">
+        <div class="text-object">
           <label for="regdate" class="form-text">Date:</label>
           <input
             id="regdate"
@@ -96,17 +95,19 @@
           />
         </div>
         <!-- Submit button -->
-        <div class="button">
+        <div class="button-spacer">
           <input
             id="submitbutton"
+            class="button"
             type="submit"
             value="Submit"
           />
         </div>
         <!-- Reset button -->
-        <div class="button">
+        <div class="button-spacer">
           <input
             id="resetbutton"
+            class="button"
             type="reset"
             value="Reset"
           />

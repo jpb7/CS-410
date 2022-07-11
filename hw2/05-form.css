@@ -1,16 +1,12 @@
-/* The class names and style declarations below were added to help you get started.
-If you would prefer, you can delete them and use your own classes and style declarations. */
+
+/* Form and element selectors */
 
 .form {
   width: 320px;
-  border: 1px;
-  border-style: solid;
-  border-radius: 10px;
-  border-color: var(--gray4);
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
   font-size: 14px;
+  border: 1px solid var(--gray4);
+  border-radius: 10px;
+  margin: auto auto 30px auto;
   overflow: hidden;
 }
 
@@ -29,6 +25,8 @@ If you would prefer, you can delete them and use your own classes and style decl
   width: 275px;
 }
 
+/* Text classes */
+
 .form-text {
   float: left;
   width: 100px;
@@ -36,55 +34,49 @@ If you would prefer, you can delete them and use your own classes and style decl
 }
 
 .input-box {
-  border: 1px;
-  border-style: solid;
-  border-color: var(--gray4); 
   width: 190px;
+  border: 1px solid var(--gray4);
 }
 
-.text-field {
+.text-object {
   width: 290px;
-  margin: 15px;
+  margin: 15px auto 25px auto;
+}
+
+/* Radio classes */
+
+.radio-field, .radio-field label {
+  margin-left: 10px;
+}
+
+/* Button classes */
+
+.button-spacer {
+  float: left;
+  width: 50%;
   margin-bottom: 25px;
 }
 
-.radio-field {
-  margin-left: 10px;
-}
-
-.radio-text {
-  margin-left: 10px;
-}
-
 .button {
-  float: left;
-  width: 50%;
-  margin-bottom: 30px;
+  width: 90%;
+  padding: 5px;
+  border: 1px solid var(--green);
+  border-radius: 3px;
 }
 
 #submitbutton {
-  width: 90%;
   margin-left: 15px;
-  padding: 5px;
-  border-width: 1px;
-  border-color: var(--green);
-  border-radius: 3px;
   color: var(--white);
   background-color: var(--green);
 }
 
-#submitbutton:hover {
-  color: var(--black);
-  background-color: var(--orange);
-}
-
 #resetbutton {
-  width: 90%;
   margin-left: 2px;
-  padding: 5px;
-  border-width: 1px;
-  border-color: var(--green);
-  border-radius: 3px;
   color: var(--green);
   background-color: var(--white);
+}
+
+#submitbutton:hover, #resetbutton:hover {
+  color: var(--black);
+  background-color: var(--orange);
 }
