@@ -11,89 +11,106 @@
       content="cs410, hw1, exercise, 05, form" />
     <meta http-equiv="author"
       content="Jacob Bentley" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../hw2/05-form.css" />
   </head>
   <body>
     <main>
       <!-- Begin Exercise 5 -->
-      <form id="registration" action="">
+      <form class="form" action="">
         <!-- Form title -->
-        <h1 id="regtitle">Registration Form</h1>
+        <h1>Registration Form</h1>
         <!-- Input username -->
-        <label for="username">Username:</label>
-        <input
-          id="username"
-          class="regtext"
-          type="text"
-          name="username"
-          required="required"
-        />
-        <br /><br />
+        <div class="text-field">
+          <label for="username" class="form-text">Username:</label>
+          <input
+            id="username"
+            class="input-box"
+            type="text"
+            name="username"
+            required="required"
+          />
+        </div>
         <!-- Input email -->
-        <label for="email">Email:</label>
-        <input
-          id="email"
-          class="regtext"
-          type="email"
-          name="email"
-          required="required"
-        />
-        <br /><br />
+        <div class="text-field">
+          <label for="email" class="form-text">Email:</label>
+          <input
+            id="email"
+            class="input-box"
+            type="email"
+            name="email"
+            required="required"
+          />
+        </div>
         <!-- Input password -->
-        <label for="password">Password:</label>
-        <input
-          id="password"
-          class="regtext"
-          type="password"
-          name="password"
-          required="required"
-        />
-        <br /><br />
+        <div class="text-field">
+          <label for="password" class="form-text">Password:</label>
+          <input
+            id="password"
+            class="input-box"
+            type="password"
+            name="password"
+            required="required"
+          />
+        </div>
         <!-- Input newsletter option -->
-        <fieldset id="subnewsletter">
-          <legend>Would you like to sign up for the newsletter?</legend>
+        <fieldset>
+          <div>
+            <legend class="form-text">
+              Would you like to sign up for the newsletter?
+            </legend>
+          </div>
           <!-- Sign up -->
-          <input
-            id="signup"
-            class="suboption"
-            type="radio"
-            name="newsletter"
-            value="true"
-            required="required"
-          />
-          <label for="signup">Yes, sign me up</label>
+          <div class="radio-field">
+            <input
+              id="signup"
+              type="radio"
+              name="newsletter"
+              value="true"
+              required="required"
+            />
+            <label for="signup" class="radio-text">Yes, sign me up</label>
+          </div>
           <!-- Do not sign up -->
+          <div class="radio-field">
+            <input
+              id="nosignup"
+              class="suboption"
+              type="radio"
+              name="newsletter"
+              value="false"
+              required="required"
+            />
+            <label for="nosignup" class="radio-text">No, thank you</label>
+          </div>
+        </fieldset>
+        <!-- Input date -->
+        <div class="text-field">
+          <label for="regdate" class="form-text">Date:</label>
           <input
-            id="nosignup"
-            class="suboption"
-            type="radio"
-            name="newsletter"
-            value="false"
+            id="regdate"
+            class="input-box"
+            type="date"
+            name="date"
             required="required"
           />
-          <label for="nosignup">No, thank you</label>
-        </fieldset>
-        <br />
-        <!-- Input date -->
-        <label for="regdate">Date:</label>
-        <input
-          id="regdate"
-          type="date"
-          name="date"
-          required="required"
-        />
-        <br /><br />
+        </div>
         <!-- Submit button -->
-        <input
-          id="submitbutton"
-          type="submit"
-          value="Submit"
-        />
+        <div class="button">
+          <input
+            id="submitbutton"
+            type="submit"
+            value="Submit"
+          />
+        </div>
         <!-- Reset button -->
-        <input
-          id="resetbutton"
-          type="reset"
-          value="Reset"
-        />
+        <div class="button">
+          <input
+            id="resetbutton"
+            type="reset"
+            value="Reset"
+          />
+        </div>
       </form>
       <!-- End Exercise 5 -->
     </main>
