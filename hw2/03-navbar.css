@@ -1,20 +1,22 @@
-/* The class names and style declarations below were added to help you get started.
-If you would prefer, you can delete them and use your own classes and style declarations. */
 
 body {
   margin: 0;
 }
 
+/* Navbar class */
+
 .navlist {
   list-style: none;
 }
 
+/* Navigation links */
+
 .navlink {
+  float: left;
+  padding: 30px;
   border: none;
   color: var(--white);
   background-color: var(--green);
-  float: left;
-  padding: 30px;
 }
 
 .navlink:link {

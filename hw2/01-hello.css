@@ -1,24 +1,26 @@
-/* The class names and style below were added to help you get started with styling the pages.
-If you would prefer, you can delete them and use your own classes and style definitions. */
 
 body {
   text-align: center;
   font-size: 16px;
 }
 
-img#headshot {
+/* Headshot class */
+
+.headshot {
   border-radius: 100%;
   margin-top: 50px;
 }
 
-p#bio {
-  text-align: left;
+/* Bio class */
+
+.bio {
   width: 50%;
+  text-align: left;
   margin-left: auto;
   margin-right: auto;
 }
 
-p#bio:first-line {
+.bio:first-line {
   font-size: 22px;
   font-weight: bold;
 }

@@ -1,33 +1,31 @@
-/* The class names and style declarations below were added to help you get started.
-If you would prefer, you can delete them and use your own classes and style declarations. */
+
+/* Card classes */
 
 .card {
   width: 300px;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 5px;
-  border-color: var(--navy);
   font-size: 16px;
+  border: 1px solid var(--navy);
+  border-radius: 5px;
 }
 
-.cardtitle {
-  color: var(--navy);
-  margin: 30px auto 20px auto;
-  text-align: center;
+.card-title {
   font-size: 22px;
   font-style: bold;
+  text-align: center;
+  color: var(--navy);
+  margin: 30px auto 20px auto;
 }
 
-.cardimage {
+.card-image {
   width: 270px;
   margin: auto 15px auto 15px;
 }
 
-.cardtext {
+.card-text {
   margin: 20px 15px 20px 15px;
 }
 
-.cardbutton {
+.card-button {
   width: 270px;
   height: 30px;
   border-width: 1px;
@@ -36,7 +34,7 @@ If you would prefer, you can delete them and use your own classes and style decl
   background-color: var(--navy);
 }
 
-.cardbutton:hover {
+.card-button:hover {
   color: var(--black);
   background-color: var(--orange);
 }
