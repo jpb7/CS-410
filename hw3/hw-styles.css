@@ -45,7 +45,11 @@ h1 {
 /* Code for exercise 02-flex */
 
 .flex-container-2 {
+  display: flex;
   height: 400px;
+  flex-flow: column-reverse wrap;
+  justify-content: stretch;
+  align-content: space-evenly;
 }
 
 /* Code for exercise 03-grid */
