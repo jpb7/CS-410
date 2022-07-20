@@ -14,8 +14,82 @@
   </head>
   <body>
     <main>
-      <form>
-        <h1>Contact Form</h1>
+      <!-- Contact form -->
+      <form class="bootstrap-form fs-6 mt-5 px-3 gap-1 bg-light border rounded">
+      <!-- <form class="fs-6 mt-5 d-grid px-3 gap-1 col-lg-4 col-md-6 offset-lg-4 offset-md-3 bg-light border rounded"> -->
+        <!-- Header -->
+        <h1 class="fs-4 pt-4 pb-2 fw-bold text-center text-uppercase">
+          Contact Form
+        </h1>
+        <!-- Input username -->
+        <div class="form-group row">
+          <label for="username" class="col-md-4 col-form-label">
+            Username:
+          </label>
+          <div class="col-md-8">
+            <input type="text" class="form-control form-control-sm" id="username" />
+          </div>
+        </div>
+        <!-- Input email -->
+        <div class="form-group row">
+          <label for="inputEmail" class="col-md-4 col-form-label">
+            Email:
+          </label>
+          <div class="col-md-8">
+            <input type="email" class="form-control form-control-sm" id="inputEmail" />
+          </div>
+        </div>
+        <!-- Input password -->
+        <div class="form-group row">
+          <label for="inputPassword" class="col-md-4 col-form-label">
+            Password:
+          </label>
+          <div class="col-md-8">
+            <input type="password" class="form-control form-control-sm" id="inputPassword" />
+          </div>
+        </div>
+        <!-- Newsletter radio menu -->
+        <fieldset class="py-2 form-group">
+          <div class="row">
+            <legend class="col-form-label col-10 pt-0">
+              Would you like to sign up for the newsletter?
+            </legend>
+            <div class="col-md-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="newsletter" id="signup" value="yes">
+                <label class="form-check-label" for="signup">
+                  Yes, sign me up
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="newsletter" id="nosignup" value="no">
+                <label class="form-check-label" for="nosignup">
+                  No, thank you
+                </label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <!-- Input date -->
+        <div class="pb-3 form-group row">
+            <label for="regDate" class="col-md-4 col-form-label">
+              Date:
+            </label>
+            <div class="col-md-8">
+              <input type="date" class="form-control form-control-sm" id="regDate" name="date" value="startDate" />
+            </div>
+        </div>
+        <!-- Buttons -->
+        <div class="pb-3 d-flex justify-content-center form-group">
+            <!-- Submit -->
+            <button type="submit" class="me-1 flex-fill btn btn-sm btn-primary" role="button">
+              Submit
+            </button>
+            <!-- Reset -->
+            <button type="reset" class="flex-fill btn btn-sm btn-secondary" role="button">
+              Reset
+            </button>
+        </div>
       </form>
     </main>
   </body>
