@@ -1,5 +1,17 @@
 const getPrimes = () => {
-  // Add your code here
+  let i = 2;
+  for (; i < 101; ++i) {
+    isPrime = true;
+    for (let j = 2; j <= Math.sqrt(i); ++j) {
+      if (i % j == 0) {
+        isPrime = false;
+        break;
+      }
+    }
+    if (isPrime) {
+      console.log(i);
+    }
+  }
 };
 
 getPrimes();
