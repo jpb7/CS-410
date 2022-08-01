@@ -29,11 +29,7 @@ const lookupItem = (index) => {
 
 const printItems = () => {
   // return a string of the concatenated item in result, separated by commas
-  let out = "";
-  for (var item of result) {
-    out += item + ", ";
-  }
-  console.log(out.slice(0, out.length - 2));
+  return result.join(", ");
 };
 
 insertItem(1);
