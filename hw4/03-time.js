@@ -6,8 +6,13 @@ const calculateTime = (date1, date2) => {
     return "Error: Invalid input provided.";
   }
 
-  const years = Math.abs(dateObj1.getFullYear() - dateObj2.getFullYear());
-  const months = Math.abs(dateObj1.getMonth() - dateObj2.getMonth());
+  const years = Math.abs(
+    dateObj1.getFullYear() - dateObj2.getFullYear()
+  );
+
+  const months = Math.abs(
+    dateObj1.getMonth() - dateObj2.getMonth()
+  );
 
   return `Time elapsed: ${years} years, ${months} months`;
 };

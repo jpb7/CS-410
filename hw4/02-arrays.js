@@ -19,7 +19,7 @@ const deleteItem = (item) => {
 
 const lookupItem = (index) => {
   // return the item from result at index, deleting the obtained item
-  var item = result[index];
+  let item = result[index];
   if (item != null) {
     result.splice(index, 1);
     return item;
